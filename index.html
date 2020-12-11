@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <title>首页</title>
+    <script>
+        (function () {
+            var html = document.querySelector("html");
+            var width = html.getBoundingClientRect().width;
+            html.style.fontSize = width / 10 + "px";
+        })();
+    </script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- jq -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- 导航 -->
+    <script type="text/javascript" src="js/menu.js"></script>
+    <!-- banner -->
+    <script src="js/swiper.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            // banner
+            var bannerSwiper = new Swiper('#banner', {
+                autoplay: true, // 自动播放
+                loop: true, // 循环轮播
+                speed: 2000,
+                pagination: {
+                    el: '.swiper-pagination',
+                }
+            });
+            // 师资力量
+            var swiper = new Swiper('#PerView', {
+                autoplay: true, // 自动播放
+                loop: true, // 循环轮播 
+                slidesPerView: 2,
+                spaceBetween: 20
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- 顶部内容开始 -->
+    <div class="headerinfo">
+        <!-- logo -->
+        <div class="logo">
+          <a href="javascript:;">
+            <img src="images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="menu"></div>
+    </div>
+    <!--滑出导航-->
+    <div class="bgDiv"></div>
+    <div class="rightNav">
+        <a href="javascript:;" class="active">网站首页</a>
+        <a href="aboutUs.html">关于我们</a>
+        <a href="classSystem.html">课程体系</a>
+        <a href="latestNews.html">最新资讯</a>
+        <a href="contactUs.html">联系我们</a>
+    </div>
+    <div class="head-ebox"></div>
+    <!-- 顶部内容结束 -->
+
+    <!-- banner 开始 -->
+    <div class="bannerbox">
+        <div class="swiper-container" id="banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/banner01.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/banner02.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- banner 结束 -->
+
+    <!-- 师资力量 开始 -->
+    <div class="teacher-part">
+        <div class="mainparttitle">
+            <div class="eng">teachers power</div>
+            <div class="chi">师资力量</div>
+        </div>
+        <div class="projects-body">
+            <div class="swiper-container" id="PerView">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide col-lg-4">
+                        <a href="aboutUs.html">
+                            <div class="teachersImg">
+                                <img src="images/tea-1.jpg" alt="">
+                            </div>
+                            <div class="teacher-item-name">
+                                <div class="teacher-item-name-line"></div>
+                                <div class="teacher-item-name-text">单淑玲</div>
+                            </div>
+                            <div class="teacher-item-brief">
+                                得意书法主讲
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide col-lg-4">
+                        <a href="aboutUs.html">
+                            <div class="teachersImg">
+                                <img src="images/tea-2.jpg" alt="">
+                            </div>
+                            <div class="teacher-item-name">
+                                <div class="teacher-item-name-line"></div>
+                                <div class="teacher-item-name-text">单淑玲</div>
+                            </div>
+                            <div class="teacher-item-brief">
+                                得意书法主讲
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide col-lg-4">
+                        <a href="aboutUs.html">
+                            <div class="teachersImg">
+                                <img src="images/tea-3.jpeg" alt="">
+                            </div>
+                            <div class="teacher-item-name">
+                                <div class="teacher-item-name-line"></div>
+                                <div class="teacher-item-name-text">单淑玲</div>
+                            </div>
+                            <div class="teacher-item-brief">
+                                得意书法主讲
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide col-lg-4">
+                        <a href="aboutUs.html">
+                            <div class="teachersImg">
+                                <img src="images/tea-4.jpg" alt="">
+                            </div>
+                            <div class="teacher-item-name">
+                                <div class="teacher-item-name-line"></div>
+                                <div class="teacher-item-name-text">单淑玲</div>
+                            </div>
+                            <div class="teacher-item-brief">
+                                得意书法主讲
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects-foot txcenter">
+            <a href="#">展示更多</a>
+        </div>
+    </div>
+    <!-- 师资力量 结束 -->
+
+    <!-- 关于我们 开始 -->
+    <div class="about-part">
+        <div class="mainparttitle">
+            <div class="eng">about us</div>
+            <div class="chi">关于我们</div>
+        </div>
+        <div class="about-head">
+            <div class="about-show-img">
+                <img src="images/about.webp" alt="">
+            </div>
+            <div class="about-details">
+                <div class="about-content">
+                    书院生活涵盖了各种学习、交流活动。每一名学生在书院都会感受到家的温暖。站在全新的发展起点上，得意书院这个年轻的生命体，正以前所未有的勇气在高素质人才培养模式的探索中前行......
+                </div>
+                <div class="projects-foot txcenter">
+                    <a href="aboutUs.html">展示更多</a>
+                </div>
+            </div>
+        </div>
+        <div class="about-foot">
+            <div class="scroll-num">
+                <div class="scroll-col-4">
+                    <h2 class="timer count-title txcenter" id="count-number" data-to="200" data-speed="1000"></h2>
+                    <div class="scroll-text">
+                        <div class="txright">+</div>
+                        <div class="txcenter">论文写作帮助</div>
+                    </div>
+                </div>
+                <div class="ver-line"></div>
+                <div class="scroll-col-4">
+                    <h2 class="timer count-title txcenter" id="count-number" data-to="526" data-speed="1000"></h2>
+                    <div class="scroll-text">
+                        <div class="txright">+</div>
+                        <div class="txcenter">调查报告</div>
+                    </div>
+                </div>
+                <div class="ver-line"></div>
+                <div class="scroll-col-4">
+                    <h2 class="timer count-title txcenter" id="count-number" data-to="632" data-speed="1000"></h2>
+                    <div class="scroll-text">
+                        <div class="txright">+</div>
+                        <div class="txcenter">案例分析</div>
+                    </div>
+                </div>
+                <div class="ver-line"></div>
+                <div class="scroll-col-4">
+                    <h2 class="timer count-title txcenter" id="count-number" data-to="167" data-speed="1000"></h2>
+                    <div class="scroll-text">
+                        <div class="txright">+</div>
+                        <div class="txcenter">论文</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 关于我们 结束 -->
+
+    <!-- 教育环境 开始 -->
+    <div class="choose-part">
+        <div class="mainparttitle">
+            <div class="eng">educational environm</div>
+            <div class="chi">教育环境</div>
+        </div>
+        <div class="choose-body clearfix">
+            <div class="choose-img-item fl">
+                <a href="#">
+                    <img src="images/pro-9.png" alt="">
+                </a>
+            </div>
+            <div class="choose-img-item fl">
+                <a href="#">
+                    <img src="images/pro-10.jpg" alt="">
+                </a>
+            </div>
+            <div class="choose-img-item fl">
+                <a href="#">
+                    <img src="images/pro-11.jpg" alt="">
+                </a>
+            </div>
+            <div class="choose-img-item fl">
+                <a href="#">
+                    <img src="images/pro-12.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="projects-foot txcenter">
+            <a href="aboutUs.html">展示更多</a>
+        </div>
+    </div>
+    <!-- 教育环境 结束 -->
+
+    <!-- 最新资讯 开始 -->
+    <div class="news-part">
+        <div class="mainparttitle">
+            <div class="eng">latest news</div>
+            <div class="chi">最新资讯</div>
+        </div>
+        <div class="student-body clearfix">
+            <div class="stu-item fl">
+                <h2 class="more-row">为了争取更好的生活上大学的原因各不相同为了争取更好的生活</h2>
+                <p>上大学的原因各不相同，但是可以将一件事保持不变就是为了争取更好的生活。有人认为，为了争取更好的生活上大学是生活中不可避免的一部分，因为获得学位有助于改善工作。</p>
+                <a href="article.html" class="stu-more">更多</a>
+            </div>
+            <div class="stu-item fl">
+                <h2 class="more-row">上大学的原因各不相同</h2>
+                <p>上大学的原因各不相同，但是可以将一件事保持不变就是为了争取更好的生活。有人认为，上大学是生活中不可避免的一部分，因为获得学位有助于改善工作。</p>
+                <a href="article.html" class="stu-more">更多</a>
+            </div>
+        </div>
+        <div class="projects-foot txcenter">
+            <a href="latestNews.html">展示更多</a>
+        </div>
+    </div>
+    <!-- 最新资讯 结束 -->
+
+    <div class="empty"></div>
+
+    <!-- 尾部 开始 -->
+    <div class="footer">
+        <div class="footer-head">
+            <h1>联系我们</h1>
+            <div class="contact-us">
+                <div class="way-col-3">
+                    <div class="way-ico">
+                        <img src="images/tel.webp" alt="">
+                    </div>
+                    <div class="way-con">
+                        020-000000 000-000000
+                    </div>
+                </div>
+                <div class="way-col-3">
+                    <div class="way-ico">
+                        <img src="images/email.webp" alt="">
+                    </div>
+                    <div class="way-con">
+                        XXX @ .co.m
+                    </div>
+                </div>
+                <div class="way-col-3">
+                    <div class="way-ico">
+                        <img src="images/add.webp" alt="">
+                    </div>
+                    <div class="way-con">
+                        XXX县XXX路XXXXXX省XXX市
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-foot">
+            <div class="footer-menu">
+                <a href="#">关于我们</a>
+                <a href="#">写作服务的</a>
+                <a href="#">学生技巧</a>
+                <a href="#">与我们联系</a>
+            </div>
+        </div>
+        <div class="footersup">
+            <p>版权信息Copyright © 2015-2020 育林教育 All rights reserved.&nbsp;&nbsp;<a href="http://beian.miit.gov.cn" target="_blank">ICP备案号：陕ICP备20012166号</a></p>
+        </div>
+    </div>
+    <!-- 尾部 结束 -->
+    <!-- 滚动数字 -->
+    <script src="js/scrool-number.js"></script>
+</body>
+</html>

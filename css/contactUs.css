@@ -1,0 +1,101 @@
+/* banner 开始 */
+.banner-pages {
+  width: 100%;
+}
+.banner-pages img {
+  width: 100%;
+  height: 2.66666667rem;
+}
+/* banner 结束 */
+/* 地图 开始 */
+.map-part {
+  margin-top: 0.66666667rem;
+}
+.contact-ways {
+  margin: 0.4rem 0;
+}
+.contact-ways .way-con {
+  padding: 0 0.4rem;
+  font-size: 0.32rem;
+  line-height: 0.42666667rem;
+  color: #717171;
+}
+.contact-ways .way-con .way-item {
+  margin-top: 0.26666667rem;
+}
+.form-container {
+  padding: 0 0.4rem;
+  position: relative;
+  margin-top: 0.4rem;
+}
+.form-container .form-item {
+  display: flex;
+  align-items: center;
+  margin-top: 0.53333333rem;
+}
+.form-container .f-name {
+  width: 1.33333333rem;
+  font-size: 0.32rem;
+  color: #666666;
+  line-height: 0.48rem;
+  text-align: right;
+  font-weight: 700;
+}
+.form-container .form-item .f-input {
+  border: 0.01333333rem solid #dadada;
+  width: 4.66666667rem;
+  height: 0.66666667rem;
+  margin-left: 0.08rem;
+}
+.form-container .form-item input {
+  width: 100%;
+  height: 100%;
+  font-size: 0.32rem;
+  color: #666666;
+  line-height: 0.66666667rem;
+  text-indent: 1em;
+  vertical-align: top;
+}
+.form-container .f-star {
+  margin-left: 0.08rem;
+  color: red;
+  font-size: 0.16rem;
+  font-weight: bold;
+}
+.form-row-bot {
+  margin-top: 0.53333333rem;
+  display: flex;
+  align-items: center;
+}
+.form-row-bot .f-input {
+  width: 6.46666667rem;
+  height: 1.28rem;
+  padding: 0.2rem;
+  border: 0.01333333rem solid #dadada;
+  margin-left: 0.08rem;
+}
+.form-row-bot .f-input textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 0.32rem;
+  color: #666666;
+  line-height: 0.42666667rem;
+}
+.form-row-btn {
+  margin-top: 0.53333333rem;
+  margin-left: 1.33333333rem;
+}
+.form-row-btn button {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 3.25333333rem;
+  height: 0.8rem;
+  background-color: #ffad2b;
+  color: #ffffff;
+  font-size: 0.32rem;
+  text-align: center;
+  line-height: 0.8rem;
+  border: none;
+  cursor: pointer;
+}

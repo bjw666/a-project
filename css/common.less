@@ -1,0 +1,263 @@
+@rem: 75rem;
+*{
+  padding: 0;
+  margin: 0;
+}
+html,body{
+  font-family: "PingFang SC";
+  position: relative;
+  background-color: #ffffff;
+  -webkit-tap-highlight-color: transparent;//隐藏点击阴影
+  -webkit-touch-callout: none;//隐藏点击阴影
+  -webkit-user-select: none;//隐藏点击阴影
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+  line-height: normal;
+}
+img{
+  border: 0;
+  vertical-align: top;
+}
+ul,li,ol{
+  list-style: none;
+}
+input{
+  border: 0;
+  outline: none;
+  vertical-align: middle;
+}
+// 去除特殊标签斜体
+s,
+i,
+em {
+  font-style: normal;
+  /*去掉倾斜*/
+  text-decoration: none;
+  /*去掉删除线*/
+}
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+  /* IE/ 7 / 6 */
+}
+// 去除链接默认样式
+a {
+  color: #333333;
+  text-decoration: none;
+  vertical-align: top;
+}
+/*公共类*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+select , option {
+  border: 0;
+  outline: none;
+}
+textarea {
+  border: 0;
+  outline: none;
+  resize: none;
+}
+// 给placeholder 添加颜色样式
+input::-webkit-input-placeholder {
+    color: #b0b0b0;
+}
+textarea::-webkit-input-placeholder{color:#b0b0b0;}
+// 单行省略
+.one-row {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+// 多行省略
+.more-row {
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.txleft {
+    text-align: left;
+}
+.txcenter {
+    text-align: center;
+}
+.txright {
+    text-align: right;
+}
+// 解决swiper闪屏方法
+.swiper-container {
+  transform:translate3d(0,0,0);
+  overflow: hidden;
+}
+.swiper-slide {
+  transform:translate3d(0,0,0);
+}
+// 解决苹果下方黑条遮盖的方法
+@supports (bottom: env(safe-area-inset-bottom)){
+  body,
+  .footer{
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+// 顶部
+.headerinfo {
+    width: 100%;
+    height: 100/@rem;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    box-shadow: 0 0 10/@rem 0 #f2f2f2;
+}
+.head-ebox {
+    width: 100%;
+    height: 100/@rem;
+}
+.headerinfo .logo {
+    width: 100%;
+    margin-left: 30/@rem;
+    margin-top: 6/@rem;
+}
+.headerinfo .logo img {
+    width: 30%;
+    margin: 0 auto;
+}
+.headerinfo .menu {
+    position: absolute;
+    right: 30/@rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 50/@rem;
+    height: 50/@rem;
+    background: url(../images/menubg.png) no-repeat;
+    background-size: 100%;
+}
+.bgDiv{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    position: fixed;
+    display: none;
+    z-index: 99;
+    bottom: 0;
+}
+.rightNav{
+    width: 40%;
+    max-width: 460/@rem;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+    top: 0;
+    right: -50%;
+    transition: right 0.1s;
+}
+.rightNav a{
+    display: block;
+    height: 57/@rem;
+    border-bottom: 2/@rem solid #f8f8f8;
+    line-height: 57/@rem;
+    text-align: center;
+    font-size: 26/@rem;
+    color: #333333;
+}
+.rightNav a.active {
+    background-color: #ff6637;
+    color: #ffffff;
+}
+.head-ebox {
+    width: 100%;
+    height: 100/@rem;
+}
+
+.empty {
+    width: 100%;
+    height: 80/@rem;
+}
+.footer {
+    background-color: #160e0c;
+}
+.footer-head {
+    padding: 50/@rem 30/@rem 50/@rem;
+}
+.footer-head h1 {
+    font-size: 30/@rem;
+    color: rgb(178,178,178);
+    line-height: 50/@rem;
+}
+.footer-head .contact-us {
+    margin-top: 30/@rem;
+}
+.footer-head .contact-us .way-col-3 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 22/@rem;
+    color: rgb(178,178,178);
+    margin-top: 30/@rem;
+}
+.footer-head .contact-us .way-col-3 .way-ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48/@rem;
+    height: 48/@rem;
+    border: 1px solid #b3b3b3;
+    margin-right: 15/@rem;
+}
+.footer-head .contact-us .way-col-3 .way-ico img {
+    width: 25/@rem;
+}
+.footer .footer-foot {
+    border-top: 1px solid #302c29;
+    text-align: center;
+    padding: 30/@rem 0;
+    font-size: 16/@rem;
+    color: rgb(140,140,140);
+    line-height: 24/@rem;
+}
+.footer-foot a {
+    font-size: 16/@rem;
+    color: rgb(140,140,140);
+    margin: 0 15/@rem;
+    line-height: 24/@rem;
+}
+.footersup {
+    padding: 10/@rem 30/@rem;
+    background: rgba(0,0,0,0.5);
+    font-size: 12/@rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40/@rem;
+}
+.footersup span {
+    margin: 0 10/@rem;
+}
+.footersup a {
+    color: #ffffff;
+    font-size: 12/@rem;
+}

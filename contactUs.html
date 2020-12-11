@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <title>联系我们</title>
+    <script>
+        (function () {
+            var html = document.querySelector("html");
+            var width = html.getBoundingClientRect().width;
+            html.style.fontSize = width / 10 + "px";
+        })();
+    </script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contactUs.css">
+    <!-- jq -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- 导航 -->
+    <script type="text/javascript" src="js/menu.js"></script>
+</head>
+<body>
+    <!-- 顶部内容开始 -->
+    <div class="headerinfo">
+        <!-- logo -->
+        <div class="logo">
+          <a href="javascript:;">
+            <img src="images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="menu"></div>
+    </div>
+    <!--滑出导航-->
+    <div class="bgDiv"></div>
+    <div class="rightNav">
+        <a href="javascript:;" class="active">网站首页</a>
+        <a href="aboutUs.html">关于我们</a>
+        <a href="classSystem.html">课程体系</a>
+        <a href="latestNews.html">最新资讯</a>
+        <a href="contactUs.html">联系我们</a>
+    </div>
+    <div class="head-ebox"></div>
+    <!-- 顶部内容结束 -->
+
+    <!-- banner 开始 -->
+    <div class="banner-pages">
+        <img src="images/banner-4.jpg" alt="">
+    </div>
+    <!-- banner 结束 -->
+
+    <!-- 地图 开始 -->
+    <div class="map-part">
+        <div class="inside-row">
+            <div style="width: 100%;height: 200px;" id="dituContent"></div>
+        </div>
+        <div class="contact-ways">
+            <div class="way-con">
+                <div class="way-item">
+                    电话：<span>020-000-000 000-000-000</span>
+                </div>
+                <div class="way-item">
+                    MAI：<span>XXX @ .co.m</span>
+                </div>
+                <div class="way-item">
+                    QQ：<span>258-506-508</span>
+                </div>
+            </div>
+            <div class="form-container">
+                <form action="">
+                    <div class="form-row-top">
+                        <div class="form-item">
+                            <div class="f-name">名称</div>
+                            <div class="f-input">
+                                <input type="text" />
+                            </div>
+                            <div class="f-star">*</div>
+                        </div>
+                        <div class="form-item">
+                            <div class="f-name">电子邮件</div>
+                            <div class="f-input">
+                                <input type="text" />
+                            </div>
+                            <div class="f-star">*</div>
+                        </div>
+                    </div>
+                    <div class="form-row-bot">
+                        <div class="f-name">信息</div>
+                        <div class="f-input">
+                            <textarea name="" id=""></textarea>
+                        </div>
+                        <div class="f-star">*</div>
+                    </div>
+                    <div class="form-row-btn">
+                        <button>提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 地图 结束 -->
+
+    <div class="empty"></div>
+
+    <!-- 尾部 开始 -->
+    <div class="footer">
+        <div class="footer-head">
+            <h1>联系我们</h1>
+            <div class="contact-us">
+                <div class="way-col-3">
+                    <div class="way-ico">
+                        <img src="images/tel.webp" alt="">
+                    </div>
+                    <div class="way-con">
+                        020-000000 000-000000
+                    </div>
+                </div>
+                <div class="way-col-3">
+                    <div class="way-ico">
+                        <img src="images/email.webp" alt="">
+                    </div>
+                    <div class="way-con">
+                        XXX @ .co.m
+                    </div>
+                </div>
+                <div class="way-col-3">
+                    <div class="way-ico">
+                        <img src="images/add.webp" alt="">
+                    </div>
+                    <div class="way-con">
+                        XXX县XXX路XXXXXX省XXX市
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-foot">
+            <div class="footer-menu">
+                <a href="#">关于我们</a>
+                <a href="#">写作服务的</a>
+                <a href="#">学生技巧</a>
+                <a href="#">与我们联系</a>
+            </div>
+        </div>
+        <div class="footersup">
+            <p>版权信息Copyright © 2015-2020 育林教育 All rights reserved.&nbsp;&nbsp;<a href="http://beian.miit.gov.cn" target="_blank">ICP备案号：陕ICP备20012166号</a></p>
+        </div>
+    </div>
+    <!-- 尾部 结束 -->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <script type="text/javascript">
+        //创建和初始化地图函数：
+        function initMap(){
+            createMap();//创建地图
+            setMapEvent();//设置地图事件
+            addMapControl();//向地图添加控件
+            addRemark();//向地图中添加文字标注
+        }
+        
+        //创建地图函数：
+        function createMap(){
+            var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+            var point = new BMap.Point(109.741618,38.290882);//定义一个中心点坐标
+            map.centerAndZoom(point,12);//设定地图的中心点和坐标并将地图显示在地图容器中
+            window.map = map;//将map变量存储在全局
+        }
+        
+        //地图事件设置函数：
+        function setMapEvent(){
+            map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+            map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+            map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+            map.enableKeyboard();//启用键盘上下左右键移动地图
+        }
+        
+        //地图控件添加函数：
+        function addMapControl(){
+            //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+            //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+        map.addControl(ctrl_ove);
+            //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+        }
+        
+    //文字标注数组
+        var lbPoints = [{point:"109.74478|38.293601",content:"陕西省榆林市榆阳区翰庭大厦6楼605"}
+             ];
+        //向地图中添加文字标注函数
+        function addRemark(){
+            for(var i=0;i<lbPoints.length;i++){
+                var json = lbPoints[i];
+                var p1 = json.point.split("|")[0];
+                var p2 = json.point.split("|")[1];
+                var label = new BMap.Label("<div style='padding:2px;'>"+json.content+"</div>",{point:new BMap.Point(p1,p2),offset:new BMap.Size(3,-6)});
+                map.addOverlay(label);
+                label.setStyle({borderColor:"#999"});
+            }
+        }
+        
+        initMap();//创建和初始化地图
+    </script>
+</body>
+</html>

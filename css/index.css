@@ -1,0 +1,268 @@
+/* banner 开始 */
+.bannerbox {
+  width: 100%;
+  height: 4.05333333rem;
+}
+.bannerbox .swiper-container {
+  width: 100%;
+}
+.bannerbox img {
+  width: 100%;
+}
+.bannerbox .swiper-slide {
+  position: relative;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+}
+.swiper-pagination-bullet {
+  background: #ffffff;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: #ff6637;
+}
+/* banner 结束 */
+/* 公共部分 标题 */
+.mainparttitle .eng {
+  text-transform: Uppercase;
+  font-size: 0.53333333rem;
+  color: #a7afc4;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  line-height: 0.90666667rem;
+  padding-top: 0.66666667rem;
+}
+.mainparttitle .chi {
+  font-size: 0.34666667rem;
+  color: #283256;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0.72rem;
+}
+/* 师资力量 开始 */
+.teacher-part .projects-body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4rem;
+  padding: 0 0.4rem;
+  margin-bottom: 0.13333333rem;
+}
+.teachersImg {
+  width: 100%;
+  height: 4.66666667rem;
+  overflow: hidden;
+}
+.teacher-part .col-lg-4 img {
+  width: 100%;
+}
+.teacher-part .col-lg-4 {
+  box-shadow: 0 0 0.13333333rem 0 #cccccc;
+  margin: 0.13333333rem 0;
+  border-radius: 0.05333333rem;
+  overflow: hidden;
+}
+.teacher-part .swiper-container {
+  margin: 0.13333333rem;
+  padding: 0 0.13333333rem;
+}
+.teacher-part .swiper-slide.col-lg-4 {
+  height: 6rem;
+}
+.teacher-part .teacher-item-name {
+  position: relative;
+  margin: 0.26666667rem 0 0 0.2rem;
+}
+.teacher-part .teacher-item-name-line {
+  width: 0.08rem;
+  height: 0.26666667rem;
+  background: #3c7cfc;
+  border-radius: 0.10666667rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.teacher-part .teacher-item-name-text {
+  margin-left: 0.18666667rem;
+  font-size: 0.26666667rem;
+  color: #222;
+  letter-spacing: 0;
+  position: relative;
+  top: -0.05333333rem;
+  font-weight: 400;
+}
+.teacher-part .teacher-item-brief {
+  padding-left: 0.2rem;
+  font-size: 0.18666667rem;
+  color: #a1a8b3;
+  letter-spacing: 0;
+}
+.projects-foot a {
+  display: block;
+  width: 2.66666667rem;
+  height: 0.66666667rem;
+  background-color: #ff6637;
+  border-radius: 0.05333333rem;
+  text-align: center;
+  margin: 0.53333333rem auto 0;
+  line-height: 0.66666667rem;
+  font-size: 0.32rem;
+  color: #ffffff;
+}
+/* 师资力量 结束 */
+/* 关于我们 开始 */
+.about-part {
+  margin: 0.4rem 0.4rem 0;
+}
+.about-part .about-head {
+  width: 100%;
+  background-color: #f7f7f7;
+  margin-top: 0.4rem;
+}
+.about-part .about-show-img {
+  width: 9.2rem;
+  height: 4.66666667rem;
+  background-color: #cccccc;
+  overflow: hidden;
+}
+.about-part .about-show-img img {
+  width: 100%;
+  height: 100%;
+}
+.about-details {
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+.about-details .about-content {
+  font-size: 0.32rem;
+  color: #333333;
+  line-height: 0.53333333rem;
+  margin-top: 0.26666667rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.scroll-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.66666667rem 0;
+}
+.scroll-num .scroll-col-4 {
+  width: 24%;
+  height: 1.04rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.scroll-num .scroll-col-4 h2 {
+  width: 80%;
+  font-size: 0.4rem;
+  line-height: 0.53333333rem;
+}
+.scroll-num .scroll-text {
+  position: absolute;
+  top: 45%;
+  width: 80%;
+  font-size: 0.18666667rem;
+  line-height: 0.32rem;
+  color: #333333;
+}
+.scroll-num .scroll-text > div:last-child {
+  display: flex;
+  justify-content: center;
+}
+.ver-line {
+  width: 1px;
+  height: 0.53333333rem;
+  background-color: #e6e6e6;
+  margin-top: 0.13333333rem;
+}
+/* 关于我们 结束 */
+/* 教育环境 开始 */
+.choose-part {
+  margin: 0 0.4rem;
+}
+.choose-body {
+  margin-top: 0.45333333rem;
+}
+.choose-body .choose-img-item {
+  margin-top: 0.13333333rem;
+  height: 3.33333333rem;
+  overflow: hidden;
+}
+.choose-body .choose-img-item:nth-child(1) {
+  width: 100%;
+}
+.choose-body .choose-img-item:nth-child(2) {
+  width: 4.53333333rem;
+}
+.choose-body .choose-img-item:nth-child(3) {
+  width: 4.53333333rem;
+  margin-left: 0.13333333rem;
+}
+.choose-body .choose-img-item:nth-child(4) {
+  width: 100%;
+}
+.choose-body .choose-img-item img {
+  width: 100%;
+  height: 100%;
+}
+/* 教育环境 结束 */
+/* 最新资讯 开始 */
+.news-part {
+  margin: 0 0.4rem;
+}
+.student-body {
+  margin-top: 0.4rem;
+}
+.student-body .stu-item {
+  border: 1px solid #e5e5e5;
+  width: 41%;
+  padding: 0.4rem 3%;
+  margin-left: 4%;
+  overflow: hidden;
+}
+.student-body .stu-item:nth-child(2n+1) {
+  margin-left: 0;
+}
+.student-body .stu-item h2 {
+  font-size: 0.29333333rem;
+  color: #353535;
+  line-height: 0.4rem;
+  font-weight: bold;
+  height: 0.8rem;
+}
+.student-body .stu-item p {
+  font-size: 0.18666667rem;
+  color: #808080;
+  line-height: 0.32rem;
+  height: 0.96rem;
+  margin-top: 0.13333333rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.student-body .stu-item .stu-more {
+  display: block;
+  width: 1.86666667rem;
+  height: 0.58666667rem;
+  background-color: #ff6637;
+  border-radius: 0.05333333rem;
+  text-align: center;
+  line-height: 0.58666667rem;
+  font-size: 0.21333333rem;
+  color: #ffffff;
+  margin-top: 0.4rem;
+}
+/* 最新资讯 结束 */

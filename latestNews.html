@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <title>最新资讯</title>
+    <script>
+        (function () {
+            var html = document.querySelector("html");
+            var width = html.getBoundingClientRect().width;
+            html.style.fontSize = width / 10 + "px";
+        })();
+    </script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/latestNews.css">
+    <!-- jq -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- 导航 -->
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script>
+        $(function(){
+            $('.news-head-title-item').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+                var newsIndex = $(this).index();
+                $('.news-body>ul').eq(newsIndex).show().siblings().hide();
+            })
+        });
+    </script>
+</head>
+<body>
+    <!-- 顶部内容开始 -->
+    <div class="headerinfo">
+        <!-- logo -->
+        <div class="logo">
+          <a href="javascript:;">
+            <img src="images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="menu"></div>
+    </div>
+    <!--滑出导航-->
+    <div class="bgDiv"></div>
+    <div class="rightNav">
+        <a href="javascript:;" class="active">网站首页</a>
+        <a href="aboutUs.html">关于我们</a>
+        <a href="classSystem.html">课程体系</a>
+        <a href="latestNews.html">最新资讯</a>
+        <a href="contactUs.html">联系我们</a>
+    </div>
+    <div class="head-ebox"></div>
+    <!-- 顶部内容结束 -->
+
+    <!-- banner 开始 -->
+    <div class="banner-pages">
+        <img src="images/banner-4.jpg" alt="">
+    </div>
+    <!-- banner 结束 -->
+
+    <!-- 最新资讯 开始 -->
+    <div class="news-part">
+        <div class="news-head-title clearfix">
+            <div class="news-head-title-item fl active">昨日资讯</div>
+            <div class="news-head-title-item fl">今日话题</div>
+            <div class="news-head-title-item fl">未来发展</div>
+        </div>
+        <div class="news-body">
+            <ul class="list-box">
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsimg">
+                            <img src="http://ylyljy.com/uploads/images/20201130/1361105e9c13e19f995827e6323d17d8.jpg" alt="">
+                        </div>
+                        <div class="dtnewsdet">
+                            <h3 class="one-row">育林教育第七期爱心助学公益活动正式开启，让更多的孩子享受优质教育！</h3>
+                            <p class="one-row">育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsimg">
+                            <img src="http://ylyljy.com/uploads/images/20201130/1361105e9c13e19f995827e6323d17d8.jpg" alt="">
+                        </div>
+                        <div class="dtnewsdet">
+                            <h3 class="one-row">育林教育第七期爱心助学公益活动正式开启，让更多的孩子享受优质教育！</h3>
+                            <p class="one-row">育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsdet dtnewsnoImg">
+                            <h3 class="one-row">育林教育第七期爱心助学公益活动正式开启，让更多的孩子享受优质教育！</h3>
+                            <p class="one-row">育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsimg">
+                            <img src="http://ylyljy.com/uploads/images/20201130/1361105e9c13e19f995827e6323d17d8.jpg" alt="">
+                        </div>
+                        <div class="dtnewsdet">
+                            <h3 class="one-row">育林教育第七期爱心助学公益活动正式开启，让更多的孩子享受优质教育！</h3>
+                            <p class="one-row">育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsimg">
+                            <img src="http://ylyljy.com/uploads/images/20201130/1361105e9c13e19f995827e6323d17d8.jpg" alt="">
+                        </div>
+                        <div class="dtnewsdet">
+                            <h3 class="one-row">育林教育第七期爱心助学公益活动正式开启，让更多的孩子享受优质教育！</h3>
+                            <p class="one-row">育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsdet dtnewsnoImg">
+                            <h3 class="one-row">育林教育第七期爱心助学公益活动正式开启，让更多的孩子享受优质教育！</h3>
+                            <p class="one-row">育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-box" style="display: none;">
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsimg">
+                            <img src="http://ylyljy.com/uploads/images/20201130/1361105e9c13e19f995827e6323d17d8.jpg" alt="">
+                        </div>
+                        <div class="dtnewsdet">
+                            <h3 class="one-row">111111111育林教育第七期爱心助学公益活动正式开启1111111111！</h3>
+                            <p class="one-row">111111111育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：11</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsimg">
+                            <img src="http://ylyljy.com/uploads/images/20201130/1361105e9c13e19f995827e6323d17d8.jpg" alt="">
+                        </div>
+                        <div class="dtnewsdet">
+                            <h3 class="one-row">育林教育第七期爱心助学公益活动正式开启，让更多的孩子享受优质教育！</h3>
+                            <p class="one-row">育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsdet dtnewsnoImg">
+                            <h3 class="one-row">育林教育第七期爱心助学公益活动正式开启，让更多的孩子享受优质教育！</h3>
+                            <p class="one-row">育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsimg">
+                            <img src="http://ylyljy.com/uploads/images/20201130/1361105e9c13e19f995827e6323d17d8.jpg" alt="">
+                        </div>
+                        <div class="dtnewsdet">
+                            <h3 class="one-row">育林教育第七期爱心助学公益活动正式开启，让更多的孩子享受优质教育！</h3>
+                            <p class="one-row">育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsimg">
+                            <img src="http://ylyljy.com/uploads/images/20201130/1361105e9c13e19f995827e6323d17d8.jpg" alt="">
+                        </div>
+                        <div class="dtnewsdet">
+                            <h3 class="one-row">育林教育第七期爱心助学公益活动正式开启，让更多的孩子享受优质教育！</h3>
+                            <p class="one-row">育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsdet dtnewsnoImg">
+                            <h3 class="one-row">育林教育第七期爱心助学公益活动正式开启，让更多的孩子享受优质教育！</h3>
+                            <p class="one-row">育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-box" style="display: none;">
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsimg">
+                            <img src="http://ylyljy.com/uploads/images/20201130/1361105e9c13e19f995827e6323d17d8.jpg" alt="">
+                        </div>
+                        <div class="dtnewsdet">
+                            <h3 class="one-row">22222育林教育第七期爱心助学公益活动正式开启，22222222222</h3>
+                            <p class="one-row">222222222育2林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsimg">
+                            <img src="http://ylyljy.com/uploads/images/20201130/1361105e9c13e19f995827e6323d17d8.jpg" alt="">
+                        </div>
+                        <div class="dtnewsdet">
+                            <h3 class="one-row">育林教育第七期爱心助学公益活动正式开启，让更多的孩子享受优质教育！</h3>
+                            <p class="one-row">育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsdet dtnewsnoImg">
+                            <h3 class="one-row">育林教育第七期爱心助学公益活动正式开启，让更多的孩子享受优质教育！</h3>
+                            <p class="one-row">育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsimg">
+                            <img src="http://ylyljy.com/uploads/images/20201130/1361105e9c13e19f995827e6323d17d8.jpg" alt="">
+                        </div>
+                        <div class="dtnewsdet">
+                            <h3 class="one-row">育林教育第七期爱心助学公益活动正式开启，让更多的孩子享受优质教育！</h3>
+                            <p class="one-row">育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsimg">
+                            <img src="http://ylyljy.com/uploads/images/20201130/1361105e9c13e19f995827e6323d17d8.jpg" alt="">
+                        </div>
+                        <div class="dtnewsdet">
+                            <h3 class="one-row">育林教育第七期爱心助学公益活动正式开启，让更多的孩子享受优质教育！</h3>
+                            <p class="one-row">育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ylyljy.com/mobile/news/detail/37.html">
+                        <div class="dtnewsdet dtnewsnoImg">
+                            <h3 class="one-row">育林教育第七期爱心助学公益活动正式开启，让更多的孩子享受优质教育！</h3>
+                            <p class="one-row">育林教育第七期爱心助学公益活动正式开启</p>
+                            <div class="elseinfo clearfix">
+                                <div class="dtnewsdetdate fl">2020-11-30 09:47:38</div>
+                                <div class="look fr">浏览量：43</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 最新资讯 结束 -->
+
+    <div class="empty"></div>
+
+    <!-- 尾部 开始 -->
+    <div class="footer">
+        <div class="footer-head">
+            <h1>联系我们</h1>
+            <div class="contact-us">
+                <div class="way-col-3">
+                    <div class="way-ico">
+                        <img src="images/tel.webp" alt="">
+                    </div>
+                    <div class="way-con">
+                        020-000000 000-000000
+                    </div>
+                </div>
+                <div class="way-col-3">
+                    <div class="way-ico">
+                        <img src="images/email.webp" alt="">
+                    </div>
+                    <div class="way-con">
+                        XXX @ .co.m
+                    </div>
+                </div>
+                <div class="way-col-3">
+                    <div class="way-ico">
+                        <img src="images/add.webp" alt="">
+                    </div>
+                    <div class="way-con">
+                        XXX县XXX路XXXXXX省XXX市
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-foot">
+            <div class="footer-menu">
+                <a href="#">关于我们</a>
+                <a href="#">写作服务的</a>
+                <a href="#">学生技巧</a>
+                <a href="#">与我们联系</a>
+            </div>
+        </div>
+        <div class="footersup">
+            <p>版权信息Copyright © 2015-2020 育林教育 All rights reserved.&nbsp;&nbsp;<a href="http://beian.miit.gov.cn" target="_blank">ICP备案号：陕ICP备20012166号</a></p>
+        </div>
+    </div>
+</body>
+</html>

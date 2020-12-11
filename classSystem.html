@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <title>最新资讯</title>
+    <script>
+        (function () {
+            var html = document.querySelector("html");
+            var width = html.getBoundingClientRect().width;
+            html.style.fontSize = width / 10 + "px";
+        })();
+    </script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/classSystem.css">
+    <!-- jq -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- 导航 -->
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script>
+        $(function(){
+            $('.news-head-title-item').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+                var newsIndex = $(this).index();
+                $('.news-body>ul').eq(newsIndex).show().siblings().hide();
+            })
+        });
+    </script>
+</head>
+<body>
+    <!-- 顶部内容开始 -->
+    <div class="headerinfo">
+        <!-- logo -->
+        <div class="logo">
+          <a href="javascript:;">
+            <img src="images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="menu"></div>
+    </div>
+    <!--滑出导航-->
+    <div class="bgDiv"></div>
+    <div class="rightNav">
+        <a href="javascript:;" class="active">网站首页</a>
+        <a href="aboutUs.html">关于我们</a>
+        <a href="classSystem.html">课程体系</a>
+        <a href="latestNews.html">最新资讯</a>
+        <a href="contactUs.html">联系我们</a>
+    </div>
+    <div class="head-ebox"></div>
+    <!-- 顶部内容结束 -->
+
+    <!-- banner 开始 -->
+    <div class="banner-pages">
+        <img src="images/banner-4.jpg" alt="">
+    </div>
+    <!-- banner 结束 -->
+
+    <!-- 课程体系 开始 -->
+    <div class="class-system">
+        <div class="news-head-title clearfix">
+            <div class="news-head-title-item fl active">课程展示</div>
+            <div class="news-head-title-item fl">课程套餐</div>
+        </div>
+        <div class="class-system-wrap">
+            <!-- 课程展示 -->
+            <div class="class-system-show">
+                <div class="onlineclass_row">
+                    <div class="onlineclassname">课程年级:</div>
+                    <div class="classcon">
+                        <span class="classitem allclass" onclick="gradeClick()">全部</span>
+                        <span class="classitem " onclick="gradeClick('1')">一年级</span>
+                        <span class="classitem " onclick="gradeClick('2')">二年级</span>
+                        <span class="classitem " onclick="gradeClick('3')">三年级</span>
+                        <span class="classitem " onclick="gradeClick('4')">四年级</span>
+                        <span class="classitem " onclick="gradeClick('5')">五年级</span>
+                        <span class="classitem " onclick="gradeClick('6')">六年级</span>
+                        <span class="classitem " onclick="gradeClick('7')">初一</span>
+                        <span class="classitem " onclick="gradeClick('8')">初二</span>
+                        <span class="classitem " onclick="gradeClick('9')">初三</span>
+                        <span class="classitem " onclick="gradeClick('10')">高一</span>
+                        <span class="classitem " onclick="gradeClick('11')">高二</span>
+                        <span class="classitem " onclick="gradeClick('12')">高三</span>
+                        <span class="classitem " onclick="gradeClick('13')">其他</span>
+                    </div>
+                </div>
+                <div class="onlineclasscontents">
+                    <ul class="clearfix">
+                        <li class="hover-box item-out clearfix">
+                            <div class="img_info">
+                                <img src="http://ylyljy.com/uploads/images/20200821/1292b329f3687da7f203151b3ca25135.png" alt="">
+                            </div>
+                            <div class="course_info">
+                                <h4 class="one-row">八年级数学课程进度计划</h4>
+                                <div class="teacher_item">
+                                    演讲人: <span>陈飞</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hover-box item-out clearfix">
+                            <div class="img_info">
+                                <img src="http://ylyljy.com/uploads/images/20200820/277fd3fa57305389919e730e672de645.png" alt="">
+                            </div>
+                            <div class="course_info">
+                                <h4 class="one-row">八年级数学课程进度计划</h4>
+                                <div class="teacher_item">
+                                    演讲人: <span>韩珊珊</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hover-box item-out clearfix">
+                            <div class="img_info">
+                                <img src="http://ylyljy.com/uploads/images/20200821/1292b329f3687da7f203151b3ca25135.png" alt="">
+                            </div>
+                            <div class="course_info">
+                                <h4 class="one-row">八年级数学课程进度计划</h4>
+                                <div class="teacher_item">
+                                    演讲人: <span>陈飞</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hover-box item-out clearfix">
+                            <div class="img_info">
+                                <img src="http://ylyljy.com/uploads/images/20200820/277fd3fa57305389919e730e672de645.png" alt="">
+                            </div>
+                            <div class="course_info">
+                                <h4 class="one-row">八年级数学课程进度计划</h4>
+                                <div class="teacher_item">
+                                    演讲人: <span>韩珊珊</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 课程套餐 -->
+            <div class="class-system-meal">
+                
+            </div>
+        </div>
+    </div>
+    <!-- 课程体系 结束 -->
+
+    <div class="empty"></div>
+
+    <!-- 尾部 开始 -->
+    <div class="footer">
+        <div class="footer-head">
+            <h1>联系我们</h1>
+            <div class="contact-us">
+                <div class="way-col-3">
+                    <div class="way-ico">
+                        <img src="images/tel.webp" alt="">
+                    </div>
+                    <div class="way-con">
+                        020-000000 000-000000
+                    </div>
+                </div>
+                <div class="way-col-3">
+                    <div class="way-ico">
+                        <img src="images/email.webp" alt="">
+                    </div>
+                    <div class="way-con">
+                        XXX @ .co.m
+                    </div>
+                </div>
+                <div class="way-col-3">
+                    <div class="way-ico">
+                        <img src="images/add.webp" alt="">
+                    </div>
+                    <div class="way-con">
+                        XXX县XXX路XXXXXX省XXX市
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-foot">
+            <div class="footer-menu">
+                <a href="#">关于我们</a>
+                <a href="#">写作服务的</a>
+                <a href="#">学生技巧</a>
+                <a href="#">与我们联系</a>
+            </div>
+        </div>
+        <div class="footersup">
+            <p>版权信息Copyright © 2015-2020 育林教育 All rights reserved.&nbsp;&nbsp;<a href="http://beian.miit.gov.cn" target="_blank">ICP备案号：陕ICP备20012166号</a></p>
+        </div>
+    </div>
+</body>
+</html>
